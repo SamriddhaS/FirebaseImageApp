@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterLogin">
+
+
+    <ImageView
+        android:id="@+id/cirimage"
+        android:layout_width="303dp"
+        android:layout_height="196dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:padding="10dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressbarid"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="154dp" />
+
+
+    <Button
+        android:id="@+id/uploadbutton"
+        android:layout_width="334dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/seeallpic"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:background="#dcc5c5"
+        android:onClick="UploadPic"
+        android:text="Upload Picture"
+        android:textAllCaps="false"
+        android:textColor="#1519e9"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/seeallpic"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp"
+        android:background="#2bd4d4"
+        android:text="Show Pictures"
+        android:textAllCaps="false"
+        android:textColor="#1519e9"
+        android:textSize="23sp"
+        android:onClick="MethodShowPic"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/choosePic"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="203dp"
+        android:background="#2cef91"
+        android:text="Choose Pic"
+        android:textAllCaps="false"
+        android:textColor="#1519e9"
+        android:textSize="23sp"
+        android:onClick="ChoosePic"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/choosePic"
+        android:hint="Enter Pic Title"
+        android:textColorHint="#000000"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:id="@+id/pictitle"
+        />
+
+
+
+
+
+
+</RelativeLayout>
